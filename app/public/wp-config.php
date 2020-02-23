@@ -25,10 +25,10 @@ if (file_exists(dirname(__FILE__) . '/local.php')) {
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
 } else {
-	define( 'DB_NAME', 'local' );
-	define( 'DB_USER', 'root' );
-	define( 'DB_PASSWORD', 'root' );
-	define( 'DB_HOST', 'localhost' );
+	define( 'DB_NAME', 'tomnewma_db' );
+	define( 'DB_USER', 'tomnewma_db' );
+	define( 'DB_PASSWORD', '123window' );
+	define( 'DB_HOST', '10.169.0.171' );
 }
 
 /** Database Charset to use in creating database tables. */
