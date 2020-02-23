@@ -1,0 +1,62 @@
+.post-header {
+    display: table;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    font-family: 'Gotham-Bold', sans-serif;
+    padding-top: 24px;
+    border-top: 1px solid $color-border;
+
+    @include breakpoint (desktop) {
+        padding: 48px 0 24px 0;
+    }
+    
+    &-text{
+        display: inline-block;
+        padding: 24px 0;
+        width: 85%;
+
+        @include breakpoint(tablet) {
+            width: 95%;
+        }
+
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            color: $color-secondary;
+            vertical-align: middle;
+            font-size: 1.4em;
+            letter-spacing: 5px;
+
+            @include breakpoint(tablet) {
+                font-size: 2em;
+            }
+        }
+
+        &__subtitle {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            margin-top: 6px;
+            font-size: 1.3em;
+            color: $color-tertiary;
+
+            @include breakpoint(tablet) {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .previous-post {
+        display: table-cell;
+        vertical-align: middle;
+
+        &--unavailable {
+            opacity: 0.1;
+            cursor: initial;
+        }
+    }
+    .next-post {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

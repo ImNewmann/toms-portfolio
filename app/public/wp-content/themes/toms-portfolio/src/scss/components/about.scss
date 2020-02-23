@@ -1,0 +1,27 @@
+.about {
+    color: $color-tertiary;
+    padding: 24px 0 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+
+    @include breakpoint(tablet) {
+        font-size: 1.5em;
+        padding: 48px 0 24px;
+    }
+
+    &__label {
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        font-weight: 800;
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        line-height: 1.3em;
+
+        @include breakpoint(tablet) {
+            line-height: 1.5em;
+        }
+    }
+}

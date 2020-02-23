@@ -1,0 +1,23 @@
+/*
+Theme Name: Toms Portfolio
+Author: Ben Newman
+Version: 1.0
+*/
+
+//Setting up
+@import 'base/normalize';
+@import 'base/base';
+@import 'base/variables';
+@import 'base/breakpoints';
+@import 'base/global';
+
+
+//Components
+@import 'components/header';
+@import 'components/portfolio-grid';
+@import 'components/postHeader';
+@import 'components/chevron';
+@import 'components/video';
+@import 'components/about';
+@import 'components/contact';
+@import 'components/footer';

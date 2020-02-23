@@ -1,0 +1,37 @@
+.chevron {
+    display: inline-block;
+
+    &::before {
+        border-color: $color-secondary;
+        border-style: solid;
+        border-width: 0.1em 0.1em 0 0;
+        content: '';
+        display: inline-block;
+        height: 1em;
+        left: 0.15em;
+        position: relative;
+        top: 0.15em;
+        transform: rotate(-45deg);
+        vertical-align: top;
+        width: 1em;
+
+        @include breakpoint(tablet) {
+            width: 1.8em;
+            height: 1.8em;
+        }
+    }
+    
+    &--left {
+        &::before {
+            left: 0.25em;
+            transform: rotate(-135deg);
+        }
+    }
+
+    &--right {
+        &::before {
+            left: 0;
+            transform: rotate(45deg);
+        }
+    }
+}

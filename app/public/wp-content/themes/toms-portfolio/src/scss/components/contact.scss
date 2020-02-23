@@ -1,0 +1,63 @@
+.banner {
+    position: relative;
+    height: 400px;
+    padding: 48px 0 24px;
+    border-top: 1px solid $color-border;
+
+    @include breakpoint(tablet) {
+        height: 500px;
+        padding-top: 72px;
+    }
+    @include breakpoint(desktop) {
+        height: 600px;
+        padding-top: 96px;
+        padding-bottom: 48px;
+    }
+
+    &__container {
+        height: 100%;
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+        margin:0 -100%; /* old browsers fallback */
+        margin:0 calc(50% - 50vw);
+    }
+
+    &__img {
+        background-image: url("../../dist/img/city.jpg");
+        height: 100%; 
+        opacity: 0.6;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.contact {
+    padding: 10px 20px;
+    position: absolute;
+    background-color: rgba(29, 27, 27, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: $color-secondary;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    font-size: 1.2em;
+    
+    @include breakpoint(tablet) {
+        letter-spacing: 3px;
+        font-size: 1.7em;
+    }
+ 
+    i {
+        display: inline;
+        padding-right: 10px;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
